@@ -6,51 +6,59 @@ import './Experience.css';
 const experienceData = [
   {
     id: 1,
-    role: "Undergraduate Research Assistant",
-    organization: "Computational Biology Lab",
-    date: "Sep 2023 - Present",
-    description: "Developing machine learning models for protein structure prediction and analyzing genomic datasets.",
-    type: "research"
-  },
-  {
-    id: 2,
-    role: "AI/ML Research Fellow",
-    organization: "University Research Initiative",
-    date: "Jun 2024 - Aug 2024",
-    description: "Received competitive fellowship to conduct independent research on neural network interpretability.",
-    type: "fellowship"
-  },
-  {
-    id: 3,
-    role: "Tech Lead",
-    organization: "AI & Machine Learning Club",
-    date: "Jan 2024 - Present",
-    description: "Leading a team of 15 students in organizing workshops and building ML projects for social good.",
+    role: "Mentor",
+    organization: "Women in Computer Science (WiCS)",
+    date: "October 2025 - Present",
+    description: "Mentor two undergraduate students, offering guidance on academic planning, research involvement, and navigating coursework. Provide personalized advice on internships, technical skill-building, and campus opportunities to help mentees grow confidence and direction in the tech field. Foster an inclusive, supportive environment by sharing experiences, answering questions, and connecting mentees with relevant resources.",
     type: "leadership"
   },
   {
+    id: 2,
+    role: "Undergraduate Research Assistant",
+    organization: "The Graph Lab",
+    date: "September 2025 - Present",
+    description: "Developed and tuned a scalable time-series anomaly-detection framework that aligns Brazil's weekly COVID-19 mortality spikes with four variant-driven waves. Iterative hyperparameter optimization improved in-wave alignment from ~87% to ~94%, validating the framework for real-time public-health surveillance and decision support.",
+    type: "research"
+  },
+  {
+    id: 3,
+    role: "Undergraduate Academic Assistant",
+    organization: "Simons STEM Scholars Program",
+    date: "September 2025 - Present",
+    description: "Support Simons STEM Scholars in computer science and mathematics coursework through clear, adaptive explanations of  concepts. Foster academic confidence and growth among peers through consistent mentorship and 10+ hours of weekly individualized support. Deliver instruction in both in-person and virtual formats, tailoring sessions to various learning styles using whiteboard and online tools.",
+    type: "teaching"
+  },
+  {
     id: 4,
-    role: "Software Engineering Intern",
-    organization: "BioTech Startup",
-    date: "Jun 2023 - Aug 2023",
-    description: "Built data processing pipelines for clinical trial analysis using Python and cloud technologies.",
-    type: "internship"
+    role: "Event Coordinator",
+    organization: "Artificial Intelligence Community (AIC)",
+    date: "May 2025 - Present",
+    description: "Plan and execute AI-related events by designing templates, timelines, and logistics to ensure successful and engaging programming. Collaborate with executive board members to provide regular status updates and coordinate events from planning through execution. Attend AIC events and initiatives to explore career pathways, gain practical experience, and connect with peers passionate about AI and machine learning.",
+    type: "leadership"
   },
   {
     id: 5,
-    role: "Hackathon Winner - Best ML Solution",
-    organization: "National Health Hackathon",
-    date: "Mar 2024",
-    description: "Developed an AI-powered diagnostic tool for early disease detection using medical imaging.",
-    type: "achievement"
+    role: "Event Committee Member",
+    organization: "Women in Computer Science (WiCS)",
+    date: "April 2025 - Present",
+    description: "Coordinate and host large-scale workshops, panels, and networking events that empower women in technology, including an AI/ML Workshop and Break Through Tech guest speaker session.Support a community of 850+ members by fostering collaboration, professional development, and awareness of technical opportunities. Serve as a liaison to campus organizations to enhance outreach, partnerships, and event visibility across Stony Brook University. Represent WiCS at meetings, hackathons, and campus initiatives, strengthening the club's presence in the tech community.",
+    type: "leadership"
   },
   {
     id: 6,
-    role: "Teaching Assistant",
-    organization: "Introduction to Data Science",
-    date: "Jan 2024 - May 2024",
-    description: "Assisted in teaching Python, statistics, and machine learning fundamentals to 100+ students.",
-    type: "teaching"
+    role: "AI/ML Fellow",
+    organization: "Break Through Tech Program",
+    date: "April 2025 - Present",
+    description: "Selected from 3,500+ applicants for a 12-month program combining machine learning coursework, experiential learning, and mentorship from industry professionals. Conducted exploratory data analysis, feature engineering, model (XGBoost, Random Forest, and Support Vector Machine) development and optimization to identify predictors of entrepreneurial success.",
+    type: "fellowship"
+  },
+  {
+    id: 7,
+    role: "Highlight Writer",
+    organization: "Young Investigators Review (YIR)",
+    date: "September 2024 - Present",
+    description: "Authored 13 published highlight articles translating complex research in artificial intelligence, machine learning, and bioinformatics into accessible summaries for a public academic journal. Strengthened scientific literacy, research communication, and writing skills through regular analysis of peer-reviewed publications. Contributed to YIR’s mission of bridging the gap between cutting-edge research and accessibility.",
+    type: "achievement"
   }
 ];
 
