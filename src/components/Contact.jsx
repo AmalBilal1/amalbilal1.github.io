@@ -17,7 +17,7 @@ const Contact = () => {
       >
         <h2 className="section-title shimmer-text">Get In Touch</h2>
         <p className="section-subtitle">
-          I'm always open to discussing research opportunities, collaborations, or just having a chat about technology
+          I'm always open to discussing research opportunities, collaborations, or more!
         </p>
 
         <motion.div
@@ -40,15 +40,15 @@ const Contact = () => {
             </p>
 
             <a
-              href="mailto:amal.bilal@example.com"
+              href="mailto:amalbilal20@gmail.com"
               className="contact-email"
             >
-              amal.bilal@example.com
+              amalbilal20@gmail.com
             </a>
 
             <div className="contact-links">
               <a
-                href="https://github.com"
+                href="https://github.com/AmalBilal1"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="contact-link"
@@ -60,7 +60,7 @@ const Contact = () => {
               </a>
 
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/amal-bilal"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="contact-link"
