@@ -1,0 +1,246 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  padding: 1rem 2rem;
+  transition: all 0.3s ease;
+  background: transparent;
+}
+
+.navbar.scrolled {
+  background: rgba(253, 251, 247, 0.95);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.05);
+}
+
+[data-theme="dark"] .navbar.scrolled {
+  background: rgba(26, 31, 46, 0.95);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.navbar-logo {
+  font-family: var(--font-serif);
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: var(--text-dark);
+  letter-spacing: 0.05em;
+  transition: all 0.3s ease;
+}
+
+.navbar-logo:hover {
+  color: var(--pastel-teal);
+  transform: scale(1.05);
+}
+
+.navbar-links {
+  display: flex;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+.navbar-link {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--text-light);
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.navbar-link::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--pastel-teal);
+  transition: width 0.3s ease;
+}
+
+.navbar-link:hover {
+  color: var(--text-dark);
+}
+
+.navbar-link:hover::after {
+  width: 100%;
+}
+
+.theme-toggle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(111, 197, 191, 0.1);
+  border: 2px solid transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--pastel-teal);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.theme-toggle:hover {
+  background: var(--pastel-teal);
+  color: white;
+  transform: rotate(15deg) scale(1.05);
+  border-color: var(--pastel-teal);
+}
+
+.theme-toggle svg {
+  width: 20px;
+  height: 20px;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0.8rem 1.5rem;
+  }
+
+  .navbar-links {
+    gap: 1.2rem;
+  }
+
+  .navbar-link {
+    font-size: 0.9rem;
+  }
+
+  .navbar-logo {
+    font-size: 1.5rem;
+  }
+
+  .theme-toggle {
+    width: 36px;
+    height: 36px;
+  }
+}
+
+.navbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Hamburger Menu */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  padding: 8px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.hamburger span {
+  width: 24px;
+  height: 2px;
+  background: var(--text-dark);
+  transition: all 0.3s ease;
+  border-radius: 2px;
+}
+
+.hamburger span.active:nth-child(1) {
+  transform: rotate(45deg) translate(7px, 7px);
+}
+
+.hamburger span.active:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger span.active:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -7px);
+}
+
+/* Mobile Menu */
+.mobile-menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  backdrop-filter: blur(4px);
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 280px;
+  background: var(--cream-white);
+  z-index: 1000;
+  padding: 5rem 2rem 2rem;
+  box-shadow: -4px 0 20px rgba(0, 0, 0, 0.1);
+}
+
+[data-theme="dark"] .mobile-menu {
+  background: var(--soft-gray);
+}
+
+.mobile-menu-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.mobile-menu-link {
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: var(--text-dark);
+  padding: 1rem;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.mobile-menu-link::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0;
+  height: 2px;
+  background: var(--pastel-teal);
+  transition: width 0.3s ease;
+}
+
+.mobile-menu-link:hover {
+  background: rgba(111, 197, 191, 0.1);
+  padding-left: 1.5rem;
+}
+
+.mobile-menu-link:hover::before {
+  width: 8px;
+  left: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+}
+
+@media (max-width: 580px) {
+  .navbar-links {
+    display: none;
+  }
+
+  .navbar-container {
+    justify-content: space-between;
+  }
+}

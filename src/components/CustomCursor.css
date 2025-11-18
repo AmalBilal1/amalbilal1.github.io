@@ -1,0 +1,56 @@
+.custom-cursor {
+  position: fixed;
+  pointer-events: none;
+  z-index: 10000;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.2s ease;
+}
+
+.cursor-flower {
+  animation: flowerRotate 8s linear infinite, flowerPulse 2s ease-in-out infinite;
+  transform-origin: center;
+  filter: drop-shadow(0 0 3px rgba(111, 197, 191, 0.3));
+}
+
+@keyframes flowerRotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes flowerPulse {
+  0%, 100% {
+    opacity: 0.9;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.cursor-trail {
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(111, 197, 191, 0.6), transparent);
+  animation: trailFade 0.5s ease-out forwards;
+}
+
+@keyframes trailFade {
+  to {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0);
+  }
+}
+
+/* Hide default cursor on desktop */
+@media (min-width: 768px) {
+  body, a, button {
+    cursor: none !important;
+  }
+}

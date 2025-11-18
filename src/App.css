@@ -1,0 +1,7 @@
+.App {
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Smooth scrolling is handled by index.css */
