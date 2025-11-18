@@ -59,7 +59,7 @@ const About = () => {
                 <p className="education-degree">B.S. Computer Science<p></p>B.S. Applied Mathematics & Statistics</p>
                 <p className="education-details">Expected Graduation: May 2028 <p></p>GPA: 4.0/4.0</p>
                 <p className="education-coursework">
-                  <strong>Relevant Coursework:</strong><p></p>Machine Learning<p></p>Introduction to Data Science<p></p>Data Structures and Algorithms<p></p>Survey of Probability and Statistics
+                  <strong>Relevant Coursework:</strong><p></p>Data Science<p></p>Machine Learning<p></p>Data Structures and Algorithms<p></p>Survey of Probability and Statistics<p></p>Discrete Mathematics<p></p>Linear Algebra<p></p>Calculus I, II, III<p></p>Graph Theory
                 </p>
               </div>
             </div>
