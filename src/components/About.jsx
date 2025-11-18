@@ -57,9 +57,9 @@ const About = () => {
               <div className="card-content">
                 <p className="education-school">Stony Brook University</p>
                 <p className="education-degree">B.S. Computer Science<p></p>B.S. Applied Mathematics & Statistics</p>
-                <p className="education-details">Expected Graduation: May 2028 • GPA: 4.0/4.0</p>
+                <p className="education-details">Expected Graduation: May 2028 <p></p>GPA: 4.0/4.0</p>
                 <p className="education-coursework">
-                  <strong>Relevant Coursework:</strong> Machine Learning, Introduction to Data Science, Data Structures and Algorithms, Linear Algebra, Survey of Probability and Statistics
+                  <strong>Relevant Coursework:</strong><p></p>Machine Learning<p></p>Introduction to Data Science<p></p>Data Structures and Algorithms<p></p>Survey of Probability and Statistics
                 </p>
               </div>
             </div>
@@ -95,7 +95,7 @@ const About = () => {
                       className="cert-link"
                     >
                       <span className="cert-name">Machine Learning Foundations</span>
-                      <span className="cert-date">July 2025</span>
+                      <span className="cert-date">Jul 2025</span>
                       <svg className="cert-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
                         <polyline points="15 3 21 3 21 9"></polyline>
@@ -111,7 +111,7 @@ const About = () => {
                       className="cert-link"
                     >
                       <span className="cert-name">CS50: Introduction to Artificial Intelligence with Python</span>
-                      <span className="cert-date">March 2025</span>
+                      <span className="cert-date">Mar 2025</span>
                       <svg className="cert-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
                         <polyline points="15 3 21 3 21 9"></polyline>
@@ -127,7 +127,7 @@ const About = () => {
                       className="cert-link"
                     >
                       <span className="cert-name">CS50: Introduction to Computer Science</span>
-                      <span className="cert-date">December 2024</span>
+                      <span className="cert-date">Dec 2024</span>
                       <svg className="cert-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
                         <polyline points="15 3 21 3 21 9"></polyline>
