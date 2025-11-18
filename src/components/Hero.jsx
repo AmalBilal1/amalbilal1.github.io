@@ -20,7 +20,7 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
         >
-          Computer Science & Applied Mathematics Student
+          Computer Science and Applied Mathematics & Statistics Student
         </motion.p>
 
         <motion.p
@@ -29,8 +29,7 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
         >
-          Exploring the intersection of artificial intelligence, machine learning,
-          and computational biology to solve meaningful problems
+          Exploring the intersection of artificial intelligence, machine learning, and bioinformatics to solve meaningful problems
         </motion.p>
 
         <motion.div
