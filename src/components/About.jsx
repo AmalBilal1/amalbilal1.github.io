@@ -72,9 +72,9 @@ const About = () => {
               </div>
               <div className="card-content">
                 <ul className="achievements-list">
-                  <li>Simons STEM Scholars Program - Full Ride Scholarship</li>
-                  <li>Presidential Scholarship - Four Year Scholarship</li>
-                  <li>Dean's List - Fall 2024, Spring 2025, Fall 2025</li>
+                  <li>Simons STEM Scholars Program:<p></p>Full Ride Scholarship</li>
+                  <li>Presidential Scholarship:<p></p>Four Year Merit Scholarship</li>
+                  <li>Dean's List:<p></p>Fall 2024<p></p>Spring 2025<p></p>Fall 2025</li>
                 </ul>
               </div>
             </div>
