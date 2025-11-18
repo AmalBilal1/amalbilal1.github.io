@@ -6,25 +6,25 @@ import './Research.css';
 const researchData = [
   {
     id: 1,
-    title: "Deep Learning for Protein Folding Prediction",
+    title: "Optimizing Anomaly Detection in COVID-19 Mortality Time Series",
     type: "Current Research",
-    description: "Developing novel neural network architectures to improve protein structure prediction accuracy using attention mechanisms and graph neural networks.",
-    details: "Working on implementing advanced attention mechanisms to capture long-range dependencies in protein sequences. Collaborating with the Computational Biology Lab to validate predictions against experimental data.",
-    achievements: ["Improved prediction accuracy by 12%", "Presented at Regional AI Conference"],
-    tools: ["PyTorch", "AlphaFold", "BioPython", "CUDA"],
+    description: "Optimized time-series anomaly detection models to validate and monitor the alignment of statistical mortality spikes with four major COVID-19 epidemic waves in Brazil.",
+    details: "Aggregated daily city-level and state-level COVID-19 mortality data into a weekly time series to reduce noise and simplify analysis. Applied specific anomaly detection algorithms and iteratively tuned hyperparameters to improve the model's ability to precisely identify true epidemic surges. This framework validates anoamly detection as a robust, real-time tool for monitoring public health trends.",
+    achievements: ["Achieved 94% precision in correlating statistical anomalies with known, variant-driven epidemic waves (improving from a baseline detection rate of 87%).", "Developed a scalable quantitative framework for real-time mortality surveillance, enabling public health officials to reliably monitor trends and support timely interventions."],
+    tools: ["Python", "NumPy","Pandas", "Matplotlib", "Seaborn"],
     status: "In Progress",
-    date: "2024 - Present"
+    date: "September 2025 - Present"
   },
   {
     id: 2,
-    title: "Machine Learning in Cancer Genomics",
-    type: "Research Assistant",
-    description: "Analyzing genomic data to identify biomarkers for early cancer detection using ensemble learning methods and feature selection techniques.",
-    details: "Processed and analyzed over 10,000 genomic samples. Developed feature selection pipeline that reduced dimensionality while maintaining 95% predictive accuracy.",
-    achievements: ["Published in Journal of Computational Biology", "Identified 3 novel biomarkers"],
-    tools: ["Python", "Scikit-learn", "Pandas", "R"],
-    status: "Published",
-    date: "2023 - 2024"
+    title: "Systems Mapping and Resource Allocation on an Exoplanet",
+    type: "Summer Research",
+    description: "Developed a 10-year phased plan and integrated resource systems (Food, Healthcare, Energy) to sustain a colony of 10,000 humans on an exoplanet using systems thinking and modeling techniques as a part of CERN's IdeaSquare Planet educational initiative.",
+    details: "Utilized systems thinking to map and allocate resources, prioritizing sustainability and resilience. Created dynamic models to simulate resource consumption and regeneration over time, ensuring the colony's long-term viability. Presented findings to a group of experts at CERN, receiving commendation for innovative approaches to extraterrestrial colonization challenges.",
+    achievements: ["Created three interconnected, phased systems (Food, Health, Energy) for long-term survival in a resource-limited environment.", "Validated a model where exoplanet-developed technologies (e.g., compact food production, green energy) can be adapted to support the United Nations Sustainable Development Goals (SDGs 2, 3, 6, 7, 11, 13) on Earth.", "Presented research findings at Stony Brook University's Undergraduate Research and Creative Activities (URECA) Symposium."],
+    tools: ["Systems Thinking", "Resource Allocation Modeling", "Data Visualization", "Interdisciplinary Collaboration"],
+    status: "Presented",
+    date: "June 2025 - August 2025"
   },
   {
     id: 3,
