@@ -56,7 +56,7 @@ const About = () => {
               </div>
               <div className="card-content">
                 <p className="education-school">Stony Brook University</p>
-                <p className="education-degree">B.S. Computer Science, Applied Mathematics & Statistics</p>
+                <p className="education-degree">B.S. Computer Science<p></p>B.S. Applied Mathematics & Statistics</p>
                 <p className="education-details">Expected Graduation: May 2028 • GPA: 4.0/4.0</p>
                 <p className="education-coursework">
                   <strong>Relevant Coursework:</strong> Machine Learning, Introduction to Data Science, Data Structures and Algorithms, Linear Algebra, Survey of Probability and Statistics
