@@ -6,14 +6,65 @@ import './Projects.css';
 const projectsData = [
   {
     id: 1,
-    title: "Neural Network Visualizer",
-    description: "Interactive tool for visualizing and understanding deep learning architectures in real-time",
-    details: "Built a web-based visualization tool that allows users to build, train, and visualize neural networks in their browser. Features interactive layer manipulation and real-time training visualization.",
-    features: ["Real-time network visualization", "Interactive layer configuration", "Training progress monitoring", "Export to TensorFlow/PyTorch"],
-    tech: "Python, TensorFlow, React, D3.js",
+    title: "Break Through Tech - Entrpreneur Grit Score Analysis",
+    description: "Description",
+    details: "Details",
+    features: ["Feature 1", "Feature 2"],
+    tech: "Tech 1, Tech 2, Tech 3",
     github: "https://github.com",
     image: "project1"
   },
+  {
+    id: 2,
+    title: "AIC Datathon - Detecting Heart Disease",
+    description: "Description",
+    details: "Details",
+    features: ["Feature 1", "Feature 2"],
+    tech: "Tech 1, Tech 2, Tech 3",
+    github: "https://github.com",
+    image: "project2"
+  },
+  {
+    id: 3,
+    title: "HopperHacks X - ReRelief",
+    description: "Description",
+    details: "Details",
+    features: ["Feature 1", "Feature 2"],
+    tech: "Tech 1, Tech 2, Tech 3",
+    github: "https://github.com",
+    image: "project3"
+  },
+  {
+    id: 4,
+    title: "SBUHacks 2025 - Kitty Care",
+    description: "Description",
+    details: "Details",
+    features: ["Feature 1", "Feature 2"],
+    tech: "Tech 1, Tech 2, Tech 3",
+    github: "https://github.com",
+    image: "project4"
+  },
+  {
+    id: 5,
+    title: "The Graph Lab - COVID-19 Anomaly Detection and Visualization",
+    description: "Description",
+    details: "Details",
+    features: ["Feature 1", "Feature 2"],
+    tech: "Tech 1, Tech 2, Tech 3",
+    github: "https://github.com",
+    image: "project5"
+  },
+  {
+    id: 6,
+    title: "Inspirit AI Scholars Program - Pneumonia Detection from Chest X-Rays",
+    description: "Description",
+    details: "Details",
+    features: ["Feature 1", "Feature 2"],
+    tech: "Tech 1, Tech 2, Tech 3",
+    github: "https://github.com",
+    image: "project6"
+  }
+  /*,
   {
     id: 2,
     title: "Genomic Data Analysis Pipeline",
@@ -63,7 +114,7 @@ const projectsData = [
     tech: "PyTorch, AlphaFold, CUDA, Python",
     github: "https://github.com",
     image: "project6"
-  }
+  }*/
 ];
 
 const Projects = () => {
