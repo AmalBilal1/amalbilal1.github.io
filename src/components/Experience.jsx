@@ -6,19 +6,19 @@ import './Experience.css';
 const experienceData = [
   {
     id: 1,
+    role: "Teaching Assistant",
+    organization: "Introduction to Object-Oriented Programming (CSE 114)",
+    date: "January 2026 - Present",
+    description: "Lead twice-weekly recitation sections to reinforce core programming concepts and problem-solving strategies, translating lecture material into hands-on practice. Hold regular office hours to provide individualized support, debug code with students, and clarify concepts. Grade lab assignments and provide detailed, constructive feedback to help students strengthen their technical skills. Support students one-on-one by answering questions, breaking down complex topics, and guiding them through practice problems.",
+    type: "teaching"
+  },
+  {
+    id: 2,
     role: "Mentor",
     organization: "Women in Computer Science (WiCS)",
     date: "October 2025 - Present",
     description: "Mentor two undergraduate students, offering guidance on academic planning, research involvement, and navigating coursework. Provide personalized advice on internships, technical skill-building, and campus opportunities to help mentees grow confidence and direction in the tech field. Foster an inclusive, supportive environment by sharing experiences, answering questions, and connecting mentees with relevant resources.",
     type: "leadership"
-  },
-  {
-    id: 2,
-    role: "Undergraduate Research Assistant",
-    organization: "The Graph Lab",
-    date: "September 2025 - Present",
-    description: "Developed and tuned a scalable time-series anomaly-detection framework that aligns Brazil's weekly COVID-19 mortality spikes with four variant-driven waves. Iterative hyperparameter optimization improved in-wave alignment from ~87% to ~94%, validating the framework for real-time public-health surveillance and decision support.",
-    type: "research"
   },
   {
     id: 3,
@@ -33,7 +33,7 @@ const experienceData = [
     role: "Event Coordinator",
     organization: "Artificial Intelligence Community (AIC)",
     date: "May 2025 - Present",
-    description: "Plan and execute AI-related events by designing templates, timelines, and logistics to ensure successful and engaging programming. Collaborate with executive board members to provide regular status updates and coordinate events from planning through execution. Attend AIC events and initiatives to explore career pathways, gain practical experience, and connect with peers passionate about AI and machine learning.",
+    description: "Plan and lead AI workshops and events by designing templates, timelines, and logistics to ensure successful and engaging programming. Collaborate with executive board members to provide regular status updates and coordinate events from planning through execution. Attend AIC events and initiatives to explore career pathways, gain practical experience, and connect with peers passionate about AI and machine learning.",
     type: "leadership"
   },
   {
@@ -46,14 +46,6 @@ const experienceData = [
   },
   {
     id: 6,
-    role: "AI/ML Fellow",
-    organization: "Break Through Tech Program",
-    date: "April 2025 - Present",
-    description: "Selected from 3,500+ applicants for a 12-month program combining machine learning coursework, experiential learning, and mentorship from industry professionals. Conducted exploratory data analysis, feature engineering, model (XGBoost, Random Forest, and Support Vector Machine) development and optimization to identify predictors of entrepreneurial success.",
-    type: "fellowship"
-  },
-  {
-    id: 7,
     role: "Highlight Writer",
     organization: "Young Investigators Review (YIR)",
     date: "September 2024 - Present",
@@ -106,9 +98,6 @@ const Experience = () => {
         transition={{ duration: 0.7 }}
       >
         <h2 className="section-title shimmer-text">Experience</h2>
-        <p className="section-subtitle">
-          A journey of learning, leading, and making an impact
-        </p>
 
         <motion.div
           className="experience-timeline"

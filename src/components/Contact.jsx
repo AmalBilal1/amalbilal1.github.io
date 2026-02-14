@@ -16,9 +16,6 @@ const Contact = () => {
         transition={{ duration: 0.7 }}
       >
         <h2 className="section-title shimmer-text">Get In Touch</h2>
-        <p className="section-subtitle">
-          I'm always open to discussing research opportunities, collaborations, or more!
-        </p>
 
         <motion.div
           className="contact-content"
@@ -27,17 +24,6 @@ const Contact = () => {
           transition={{ duration: 0.7, delay: 0.2 }}
         >
           <div className="contact-card">
-            <div className="contact-icon">
-              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-                <polyline points="22,6 12,13 2,6"/>
-              </svg>
-            </div>
-
-            <h3 className="contact-title">Email Me</h3>
-            <p className="contact-text">
-              Feel free to reach out for any inquiries or opportunities
-            </p>
 
             <a
               href="mailto:amalbilal20@gmail.com"
@@ -81,7 +67,7 @@ const Contact = () => {
           transition={{ duration: 0.7, delay: 0.4 }}
         >
           <p className="footer-text">
-            Designed & Built by Amal Bilal • {new Date().getFullYear()}
+            Amal Bilal • 2026
           </p>
         </motion.footer>
       </motion.div>

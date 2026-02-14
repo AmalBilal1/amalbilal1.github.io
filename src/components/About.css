@@ -30,13 +30,14 @@
   display: grid;
   grid-template-columns: 1.2fr 1fr;
   gap: 4rem;
-  align-items: center;
+  align-items: start;
 }
 
 .about-text {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+  margin-top: 2rem;
 }
 
 .about-paragraph {
@@ -208,6 +209,10 @@
   color: var(--text-light);
   font-weight: 300;
   flex-shrink: 0;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
 .cert-icon {
@@ -224,44 +229,14 @@
 
 .about-image {
   position: relative;
-}
-
-.image-placeholder {
-  width: 100%;
-  aspect-ratio: 3/4;
-  background: linear-gradient(135deg,
-    rgba(197, 232, 226, 0.4),
-    rgba(184, 212, 232, 0.4));
-  border-radius: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
-  position: relative;
+  align-self: start;
   overflow: hidden;
+  margin-top: 0rem;
 }
 
-.image-placeholder::before {
-  content: '';
-  position: absolute;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
-  background: radial-gradient(circle, rgba(255, 255, 255, 0.3) 0%, transparent 70%);
-  animation: shimmer 3s ease-in-out infinite;
-}
-
-@keyframes shimmer {
-  0%, 100% { transform: translate(-25%, -25%); }
-  50% { transform: translate(25%, 25%); }
-}
-
-.image-text {
-  font-size: 1.1rem;
-  color: var(--text-light);
-  font-weight: 300;
-  z-index: 1;
+.portrait-image {
+  width: 70%;
+  display: block;
 }
 
 @media (max-width: 968px) {
@@ -274,6 +249,13 @@
     order: -1;
     max-width: 400px;
     margin: 0 auto;
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .about-text {
+    margin-top: 0;
   }
 
   .about-highlights {
