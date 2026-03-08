@@ -57,7 +57,12 @@ const experienceData = [
     date: "September 2024 - December 2025",
     description: "Authored 13 published highlight articles translating complex research in artificial intelligence, machine learning, and bioinformatics into accessible summaries for a public academic journal. Strengthened scientific literacy, research communication, and writing skills through regular analysis of peer-reviewed publications. Contributed to YIR’s mission of bridging the gap between cutting-edge research and accessibility.",
     type: "achievement",
-    logo: "/assets/images/club_logos/sbu_yir_logo.jpeg"
+    logo: "/assets/images/club_logos/sbu_yir_logo.jpeg",
+    journals: [
+      { label: "Fall 2024: Gaming Science", url: "/assets/images/yir_journals/Volume 23_ Fall 2024.pdf" },
+      { label: "Spring 2025: Food Science", url: "/assets/images/yir_journals/Volume 24_ Spring 2025.pdf" },
+      { label: "Fall 2025: Animal Science", url: "/assets/images/yir_journals/Volume 25_ Fall 2025.pdf" }
+    ]
   }
 ];
 
@@ -138,6 +143,26 @@ const Experience = () => {
                   <span className="experience-date">{exp.date}</span>
                 </div>
                 <p className="experience-description">{exp.description}</p>
+                {exp.journals && (
+                  <div className="experience-journals">
+                    {exp.journals.map((journal, i) => (
+                      <a
+                        key={i}
+                        href={journal.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="journal-link"
+                      >
+                        {journal.label}
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                          <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                          <polyline points="15 3 21 3 21 9"></polyline>
+                          <line x1="10" y1="14" x2="21" y2="3"></line>
+                        </svg>
+                      </a>
+                    ))}
+                  </div>
+                )}
               </div>
             </motion.div>
           ))}
