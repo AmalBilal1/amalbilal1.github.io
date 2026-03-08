@@ -18,7 +18,9 @@ const experienceData = [
     organization: "Women in Computer Science (WiCS)",
     date: "October 2025 - Present",
     description: "Mentor two undergraduate students, offering guidance on academic planning, research involvement, and navigating coursework. Provide personalized advice on internships, technical skill-building, and campus opportunities to help mentees grow confidence and direction in the tech field. Foster an inclusive, supportive environment by sharing experiences, answering questions, and connecting mentees with relevant resources.",
-    type: "leadership"
+    type: "leadership",
+    logo: "/assets/images/club_logos/sbu_wics_logo.png",
+    logoFit: "contain"
   },
   {
     id: 3,
@@ -26,7 +28,8 @@ const experienceData = [
     organization: "Simons STEM Scholars Program",
     date: "September 2025 - Present",
     description: "Support Simons STEM Scholars in computer science and mathematics coursework through clear, adaptive explanations of  concepts. Foster academic confidence and growth among peers through consistent mentorship and 10+ hours of weekly individualized support. Deliver instruction in both in-person and virtual formats, tailoring sessions to various learning styles using whiteboard and online tools.",
-    type: "teaching"
+    type: "teaching",
+    logo: "/assets/images/club_logos/simons_stem_scholars_logo.jpeg"
   },
   {
     id: 4,
@@ -34,23 +37,27 @@ const experienceData = [
     organization: "Artificial Intelligence Community (AIC)",
     date: "May 2025 - Present",
     description: "Plan and lead AI workshops and events by designing templates, timelines, and logistics to ensure successful and engaging programming. Collaborate with executive board members to provide regular status updates and coordinate events from planning through execution. Attend AIC events and initiatives to explore career pathways, gain practical experience, and connect with peers passionate about AI and machine learning.",
-    type: "leadership"
+    type: "leadership",
+    logo: "/assets/images/club_logos/sbu_aic_logo.png"
   },
   {
     id: 5,
     role: "Event Committee Member",
     organization: "Women in Computer Science (WiCS)",
     date: "April 2025 - Present",
-    description: "Coordinate and host large-scale workshops, panels, and networking events that empower women in technology, including an AI/ML Workshop and Break Through Tech guest speaker session.Support a community of 850+ members by fostering collaboration, professional development, and awareness of technical opportunities. Serve as a liaison to campus organizations to enhance outreach, partnerships, and event visibility across Stony Brook University. Represent WiCS at meetings, hackathons, and campus initiatives, strengthening the club's presence in the tech community.",
-    type: "leadership"
+    description: "Coordinate and host large-scale workshops, panels, and networking events that empower women in technology, including an AI/ML Workshop and Break Through Tech guest speaker session.Support a community of 850+ members by fostering collaboration, professional development, and awareness of technical opportunities. Serve as a liaison to campus organizations to enhance outreach, partnerships, and event visibility across Stony Brook University. Represent WiCS at meetings, hackathons, and campus initiatives, strengthening the club’s presence in the tech community.",
+    type: "leadership",
+    logo: "/assets/images/club_logos/sbu_wics_logo.png",
+    logoFit: "contain"
   },
   {
     id: 6,
     role: "Highlight Writer",
     organization: "Young Investigators Review (YIR)",
-    date: "September 2024 - Present",
+    date: "September 2024 - December 2025",
     description: "Authored 13 published highlight articles translating complex research in artificial intelligence, machine learning, and bioinformatics into accessible summaries for a public academic journal. Strengthened scientific literacy, research communication, and writing skills through regular analysis of peer-reviewed publications. Contributed to YIR’s mission of bridging the gap between cutting-edge research and accessibility.",
-    type: "achievement"
+    type: "achievement",
+    logo: "/assets/images/club_logos/sbu_yir_logo.jpeg"
   }
 ];
 
@@ -112,7 +119,13 @@ const Experience = () => {
               variants={itemVariants}
             >
               <div className="experience-marker">
-                <div className="marker-icon">{getTypeIcon(exp.type)}</div>
+                <div className="marker-icon">
+                  {exp.logo ? (
+                    <img src={exp.logo} alt={exp.organization} className="marker-logo" style={exp.logoFit ? { objectFit: exp.logoFit, padding: '1px', backgroundColor: 'white' } : undefined} />
+                  ) : (
+                    getTypeIcon(exp.type)
+                  )}
+                </div>
                 <div className="marker-connector"></div>
               </div>
 
